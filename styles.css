@@ -252,7 +252,24 @@ a:hover { color: var(--color-navy); }
   grid-template-columns: minmax(0, 1fr);
   gap: clamp(14px, 2vw, 20px);
 }
-/* 1 → 2 → 4 columns so four cards never leave an orphan row */
+/* Phones: a horizontal swipe row (next card peeks in). Then 2 → 4 columns so the
+   four cards never leave an orphan row. No JavaScript. */
+@media (max-width: 619px) {
+  .services-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-inline: calc(-1 * clamp(22px, 5vw, 64px));
+    padding-inline: clamp(22px, 5vw, 64px);
+    scroll-padding-inline: clamp(22px, 5vw, 64px);
+    padding-bottom: 4px;
+  }
+  .services-grid::-webkit-scrollbar { display: none; }
+  .services-grid > .service-card { flex: 0 0 82%; scroll-snap-align: start; }
+}
 @media (min-width: 620px) { .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1100px) { .services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 
