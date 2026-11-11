@@ -7,16 +7,26 @@ Static marketing site for [impact-intelligence.com](https://impact-intelligence.
 ```
 index.html          the whole site (single scrolling page)
 styles.css           all styles — tokens in :root, then section-by-section
-assets/fonts/        self-hosted Barlow & Barlow Condensed (woff2, latin subset)
-assets/img/          favicon, apple touch icon, OG/share image
-design/              the original design handoff — reference only, not shipped behavior
-  HANDOFF.md           full spec: copy, tokens, layout notes
-  prototype.dc.html    the approved visual prototype (open in a browser)
-  design-system/       the "Industry" design system this site is built on
+assets/fonts/        self-hosted Rubik 400/500/600 (woff2, latin subset; OFL.txt is its license)
+assets/img/          logos (horizontal, reversed, mark), favicons, apple touch icon, OG/share image
+design/              the ORIGINAL 2026 "Industry" design handoff — superseded by the November 2026
+                     rebrand; kept for history only
 CNAME                 GitHub Pages custom domain config
 ```
 
 No build step, no JavaScript, no dependencies. Edit `index.html` and `styles.css` directly.
+
+## Brand
+
+The November 2026 rebrand (logo files live in the company Google Drive under Business/Branding).
+Tokens are in the `:root` block of `styles.css`:
+
+- Navy `#0A2540`, blue `#1F6FEB`, lime `#84CC16`, ground `#F2F6FB` — from the logo files
+- `#1A5FCC` is the brand blue darkened for small text on the light ground (contrast)
+- Lime is an accent only (bars, underlines) on light backgrounds — too light for text there
+- Service bullets reuse the logo's two-circle mark: blue left, navy overlap, and a per-service
+  right circle — teal `#0D9488`, orange `#F97316`, pink `#EC4899`, purple `#8B5CF6`
+- Type: Rubik (closest match to the wordmark)
 
 ## Local preview
 

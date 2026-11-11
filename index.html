@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Impact Intelligence, LLC — Data Science &amp; Technology Consulting</title>
 <meta name="description" content="Impact Intelligence is a boutique data science and technology consultancy specializing in machine learning, AI, analytics, and business intelligence.">
+<meta name="theme-color" content="#0a2540">
 
 <link rel="canonical" href="https://impact-intelligence.com/">
 
@@ -23,27 +24,30 @@
 <link rel="icon" href="assets/img/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
+<link rel="preload" href="assets/fonts/rubik-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/rubik-600.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="hero">
-  <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-arc-outer" aria-hidden="true"></div>
-  <div class="hero-arc-inner" aria-hidden="true"></div>
-
-  <div class="container">
-    <div class="wordmark">
-      <span class="wordmark-mark"></span>
-      <span class="wordmark-text">Impact Intelligence, LLC</span>
+<nav class="site-nav" aria-label="Primary">
+  <div class="container nav-inner">
+    <a href="#top" class="nav-logo" aria-label="Impact Intelligence home">
+      <img src="assets/img/logo-horizontal.svg" alt="Impact Intelligence" width="218" height="34">
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </div>
+  </div>
+</nav>
 
-    <p class="hero-eyebrow">Data Science &amp; Technology Consulting</p>
-
-    <h1>Impact Intelligence</h1>
-
-    <p class="hero-subhead">Machine learning, analytics, and engineering applied to decisions that carry weight.</p>
-
+<header id="top" class="hero">
+  <div class="container">
+    <p class="hero-eyebrow"><span class="accent-bar" aria-hidden="true"></span>Data Science &amp; Technology Consulting</p>
+    <h1>Machine learning, analytics, and engineering applied to decisions that carry weight.</h1>
+    <p class="hero-subhead">A boutique data science and technology practice for teams that need senior technical work without a large program built around it.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Start a conversation</a>
       <a href="#services" class="btn btn-secondary">What we do</a>
@@ -53,9 +57,10 @@
 
 <main>
 
-  <section class="split-section" aria-labelledby="practice-label">
-    <div class="container">
+  <section class="split-section band-white" aria-labelledby="practice-label">
+    <div class="container split">
       <div class="split-label">
+        <span class="accent-bar" aria-hidden="true"></span>
         <h2 id="practice-label" class="section-label">The Practice</h2>
       </div>
       <div class="split-content">
@@ -68,56 +73,48 @@
   <section id="services" class="services" aria-labelledby="services-label">
     <div class="container">
       <div class="services-header">
+        <span class="accent-bar" aria-hidden="true"></span>
         <h2 id="services-label" class="section-label">Services</h2>
-        <span class="services-meta">Four practice areas</span>
       </div>
 
       <div class="services-grid">
         <article class="service-card">
-          <span class="service-number" aria-hidden="true">01</span>
+          <svg class="service-bullet" aria-hidden="true" width="32" height="20" viewBox="0 0 32 20"><circle cx="10" cy="10" r="9" fill="#1f6feb"/><circle cx="22" cy="10" r="9" fill="#0d9488"/><path d="M16 3.29 A9 9 0 0 1 16 16.71 A9 9 0 0 1 16 3.29 Z" fill="#0a2540"/></svg>
           <h3>Data Science</h3>
           <p>Framing the real question, then building the analysis or experiment that answers it.</p>
-          <span class="reg-mark tl" aria-hidden="true">+</span>
-          <span class="reg-mark br" aria-hidden="true">+</span>
         </article>
 
         <article class="service-card">
-          <span class="service-number" aria-hidden="true">02</span>
+          <svg class="service-bullet" aria-hidden="true" width="32" height="20" viewBox="0 0 32 20"><circle cx="10" cy="10" r="9" fill="#1f6feb"/><circle cx="22" cy="10" r="9" fill="#f97316"/><path d="M16 3.29 A9 9 0 0 1 16 16.71 A9 9 0 0 1 16 3.29 Z" fill="#0a2540"/></svg>
           <h3>Machine Learning &amp; AI</h3>
           <p>Model development and deployment, from prototype through systems that hold up in production.</p>
-          <span class="reg-mark br" aria-hidden="true">+</span>
         </article>
 
         <article class="service-card">
-          <span class="service-number" aria-hidden="true">03</span>
+          <svg class="service-bullet" aria-hidden="true" width="32" height="20" viewBox="0 0 32 20"><circle cx="10" cy="10" r="9" fill="#1f6feb"/><circle cx="22" cy="10" r="9" fill="#ec4899"/><path d="M16 3.29 A9 9 0 0 1 16 16.71 A9 9 0 0 1 16 3.29 Z" fill="#0a2540"/></svg>
           <h3>Analytics &amp; Business Intelligence</h3>
           <p>Pipelines, metrics, and reporting that give a team one reliable view of its operations.</p>
-          <span class="reg-mark br" aria-hidden="true">+</span>
         </article>
 
         <article class="service-card">
-          <span class="service-number" aria-hidden="true">04</span>
+          <svg class="service-bullet" aria-hidden="true" width="32" height="20" viewBox="0 0 32 20"><circle cx="10" cy="10" r="9" fill="#1f6feb"/><circle cx="22" cy="10" r="9" fill="#8b5cf6"/><path d="M16 3.29 A9 9 0 0 1 16 16.71 A9 9 0 0 1 16 3.29 Z" fill="#0a2540"/></svg>
           <h3>Technical Consulting</h3>
           <p>Architecture, tooling, and delivery guidance for teams building their own data capability.</p>
-          <span class="reg-mark tr" aria-hidden="true">+</span>
-          <span class="reg-mark br" aria-hidden="true">+</span>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="about" class="split-section" aria-labelledby="about-label">
-    <div class="container">
-      <div class="split-label">
-        <h2 id="about-label" class="section-label">About</h2>
-        <div class="about-figure" aria-hidden="true">
-          <div class="ring ring-outer"></div>
-          <div class="ring ring-inner"></div>
-          <div class="line-h"></div>
-          <div class="line-v"></div>
+  <section id="about" class="split-section band-white" aria-labelledby="about-label">
+    <div class="container split">
+      <div class="split-label about-figure-col">
+        <div class="about-figure">
+          <img src="assets/img/mark.svg" alt="" width="76" height="96">
         </div>
       </div>
       <div class="split-content">
+        <span class="accent-bar" aria-hidden="true"></span>
+        <h2 id="about-label" class="section-label about-label">About</h2>
         <p class="lead">A single-member practice, led by a machine learning PhD with applied experience across energy and utilities, healthcare equipment, and large-catalog retail operations.</p>
         <p class="body-copy">Those are environments where the data is imperfect, the constraints are operational, and a model only matters if the people who rely on it can act on what it says. That shapes how the work gets done: understand the business problem first, keep the method appropriate to it, and leave behind something a client's own team can run.</p>
         <p class="body-copy">Engagements range from focused analysis and model development to longer-term advisory work alongside internal teams.</p>
@@ -127,6 +124,7 @@
 
   <section id="contact" class="contact" aria-labelledby="contact-label">
     <div class="container">
+      <span class="accent-bar accent-bar-lg" aria-hidden="true"></span>
       <h2 id="contact-label" class="section-label">Contact</h2>
       <p>Describe the problem you're working on and we'll tell you honestly whether it's a fit.</p>
       <a href="mailto:carl@impact-intelligence.com" class="contact-email">carl@impact-intelligence.com</a>
@@ -136,9 +134,9 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <span>© 2026 Impact Intelligence, LLC</span>
-    <span>Data Science &amp; Technology Consulting</span>
+  <div class="container footer-inner">
+    <img src="assets/img/logo-horizontal-reversed.svg" alt="Impact Intelligence" width="167" height="26">
+    <span>© 2026 Impact Intelligence, LLC · Data Science &amp; Technology Consulting</span>
   </div>
 </footer>
 
